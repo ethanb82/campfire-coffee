@@ -1,12 +1,16 @@
 'use strict';
 
 var hours = ['6am', '7am', '8am', '9am','10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
+var allKiosk =[];
 
-function Kiosk(minCust, maxCust, avgCupPerCustomer, avgLbsPerCustomer) {
+function Kiosk(minCust, maxCust, avgCupPerCustomer, avgLbsPerCustomer, kioskName) {
   this.minCust = minCust;
   this.maxCust = maxCust;
   this.avgCupPerCustomer = avgCupPerCustomer;
   this.avgLbsPerCustomer = avgLbsPerCustomer;
+  this.kioskName = kioskName;
+  allKiosk.push(this);
+
   this.averageCustomerPerHour = function () {
        return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
    };
@@ -32,32 +36,61 @@ function Kiosk(minCust, maxCust, avgCupPerCustomer, avgLbsPerCustomer) {
    this.fillArray();
 };
 
-var pikePlace = new Kiosk(14, 55, 1.2, 3.7);
-var capitolHill = new Kiosk(32, 48, 3.2, 0.4);
-var seattlePublicLibrary = new Kiosk(49, 75, 2.6, 0.2);
-var southLakeUnion = new Kiosk(35, 88, 1.3, 3.7);
-var seaTacAirport = new Kiosk(68, 124, 1.1, 2.7);
-var websiteSales = new Kiosk(3, 6, 0, 6.7);
+var pikePlace = new Kiosk(14, 55, 1.2, 3.7 , 'Pike Place');
+var capitolHill = new Kiosk(32, 48, 3.2, 0.4, 'Capitol Hill');
+var seattlePublicLibrary = new Kiosk(49, 75, 2.6, 0.2, 'Seattle Public Library');
+var southLakeUnion = new Kiosk(35, 88, 1.3, 3.7, 'South');
+var seaTacAirport = new Kiosk(68, 124, 1.1, 2.7, 'Seatac');
+var websiteSales = new Kiosk(3, 6, 0, 6.7, 'Web');
 //
 function renderTable() {
-  var tableBody = document.getElementById('tableOne');
+  var sectionEl = document.getElementById('anchor');
+  var tableEl = document.createElement('table');
   var rowOne = document.createElement('tr');
   var cellOne = document.createElement('th');
-  cellOne.textContent = "Name:";
+  cellOne.textContent = "Location";
+
+  sectionEl.appendChild(tableEl);
+  tableEl.appendChild(rowOne);
   rowOne.appendChild(cellOne);
-  tableBody.appendChild(rowOne);
 
   for (var i = 0; i < hours.length; i++){
     var cell = document.createElement('th');
     cell.textContent = hours[i];
     rowOne.appendChild(cell);
-  }
+
+    }
+
+    for (var x =0; x <allKiosk.length; x++){
+      var rows = document.createElement('tr');
+      var firstCell = document.createElement('td');
+      firstCell.textContent = allKiosk[x].kioskName;
+      rows.appendChild(firstCell);
+      for (var y =0; y <hours.length; y++){
+        var cellTwo = document.createElement('td');
+        cellTwo.textContent = allKiosk[x].hourlyBeansByLb[y].toFixed(2);
+        rows.appendChild(cellTwo);
+      }
+      tableEl.appendChild(rows);
+    }
 }
+
 
 renderTable();
 
 
-
+// function renderTable() {
+//   var tableBody = document.getElementById('tableTwo');
+//   var rowTwo = document.createElement('tr');
+//   var cellTwo = document.createElement('th');
+//   cellTwo.textContent = "Pike Place";
+//   rowTwo.appendChild(cellTwo);
+//   tableBody.appendChild(rowTwo);
+//
+// }
+//
+//
+// renderTable();
 
 
 //my js file will be here //
