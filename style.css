@@ -1,0 +1,30 @@
+body {
+  width : 750px;
+  font-family: Arial;
+  background-color: #186B18;
+}
+
+h1 {
+    margin: auto;
+    width: 150%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+img {
+  align:center;
+  display: inline;
+  margin: auto;
+  width: 90%;
+  padding: 60px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+p1 {
+  font-size: 21px;
+  align:center;
+  margin: auto;
+  width: 150%;
+  padding: 60px;
+}
