@@ -1,30 +1,60 @@
 body {
-  width : 750px;
-  font-family: Arial;
   background-color: #186B18;
 }
 
-h1 {
-    margin: auto;
-    width: 150%;
-    border: 3px solid #73AD21;
-    padding: 10px;
+.nav a {
+  color: #5E2B00;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
 }
 
-img {
-  align:center;
+.nav li {
   display: inline;
-  margin: auto;
-  width: 90%;
-  padding: 60px;
+
 }
-table, th, td {
-    border: 1px solid black;
+
+.jumbotron {
+  background-image:url('https://raw.githubusercontent.com/codefellows/sea-201d5/master/week-2/assets/campfire-coffee.jpg');
+  height: 633px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-p1 {
-  font-size: 21px;
-  align:center;
-  margin: auto;
-  width: 150%;
-  padding: 60px;
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #FF0D00;
+  font-size: 48px;
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+
+}
+
+.jumbotron p {
+  font-size: 30px;
+  color: #E23600;
+}
+
+.learn-more {
+  background-color: #C23808;
+  background-image:url('https://raw.githubusercontent.com/codefellows/sea-201d5/9b9b922c8e540a8afc869eaecc8b1ea5540b6f73/week-2/assets/campfire-family.jpg');
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #FF4500;
+}
+p {
+  font-size: 18px;
+  color: #FFB700;
 }
