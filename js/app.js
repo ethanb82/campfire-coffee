@@ -39,9 +39,9 @@ function Kiosk(minCust, maxCust, avgCupPerCustomer, avgLbsPerCustomer, kioskName
 var pikePlace = new Kiosk(14, 55, 1.2, 3.7 , 'Pike Place');
 var capitolHill = new Kiosk(32, 48, 3.2, 0.4, 'Capitol Hill');
 var seattlePublicLibrary = new Kiosk(49, 75, 2.6, 0.2, 'Seattle Public Library');
-var southLakeUnion = new Kiosk(35, 88, 1.3, 3.7, 'South');
-var seaTacAirport = new Kiosk(68, 124, 1.1, 2.7, 'Seatac');
-var websiteSales = new Kiosk(3, 6, 0, 6.7, 'Web');
+var southLakeUnion = new Kiosk(35, 88, 1.3, 3.7, 'South Lake Union');
+var seaTacAirport = new Kiosk(68, 124, 1.1, 2.7, 'Seatac Airport');
+var websiteSales = new Kiosk(3, 6, 0, 6.7, 'Web Store');
 //
 function renderTable() {
   var sectionEl = document.getElementById('anchor');
