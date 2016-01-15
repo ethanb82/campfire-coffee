@@ -65,3 +65,6 @@ form {
   border:solid;
 
 }
+th,tr,td {
+  border: solid;
+}
