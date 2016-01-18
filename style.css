@@ -3,7 +3,7 @@ body {
 }
 
 .nav a {
-  color: #5E2B00;
+  color: #FF4500;
   font-size: 24px;
   font-weight: bold;
   padding: 14px 10px;
@@ -20,6 +20,7 @@ body {
   height: 633px;
   background-repeat: no-repeat;
   background-size: cover;
+  border: solid;
 }
 
 .jumbotron .container {
@@ -28,16 +29,17 @@ body {
 }
 
 .jumbotron h1 {
-  color: #FF0D00;
+  color: #FF0D03;
   font-size: 48px;
-  font-family: 'Shift', sans-serif;
+  font-family: Courier;
   font-weight: bold;
 
 }
 
 .jumbotron p {
-  font-size: 30px;
-  color: #E23600;
+  image:url("https://lh6.googleusercontent.com/HIixvAnqSnta7dyn8MneZyYuzX9knsT7LULB1sBpOsJcFf4Bh_hJAVoGpufjRGhkacgHFw=w1416-h608");
+  font-size: 54px;
+  color: #FF4500;
 }
 
 .learn-more {
@@ -55,7 +57,7 @@ body {
   color: #FF4500;
 }
 p {
-  font-size: 18px;
+  font-size: 21px;
   color: #FFB700;
 }
 h3 {
@@ -67,4 +69,46 @@ form {
 }
 th,tr,td {
   border: solid;
+}
+p4 {
+  font-size: 24px;
+  color: #FFB700;
+}
+
+.jumbotron2 {
+  background-image:url("https://raw.githubusercontent.com/codefellows/sea-201d5/9b9b922c8e540a8afc869eaecc8b1ea5540b6f73/week-2/assets/campsite-tent-night.jpg");
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid;
+}
+
+.jumbotron2 .container2 {
+  position: relative;
+  top:100px;
+}
+
+  .jumbotron3 {
+    background-image:url("https://raw.githubusercontent.com/codefellows/sea-201d5/9b9b922c8e540a8afc869eaecc8b1ea5540b6f73/week-2/assets/campfire.jpg" width="300" hieght="110");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid;
+    /*padding: 14px 10px;*/
+  }
+
+  .jumbotron3 .container3 {
+    position: float;
+    top:100px;
+}
+
+p5 {
+  font-size: 36px;
+  color: black;
+
+}
+
+p6 {
+  font-size: 21px;
+  color: #FFB700;
 }
